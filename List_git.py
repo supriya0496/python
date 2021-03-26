@@ -1,4 +1,12 @@
 List = [1,2,5,4,6,9,8,7]
+List.append('10')
+print(List)
+List.remove('10')
+print(List)
+List.pop()
+print(List)
+List.insert(0,22)
+print(List)
 print(max(List))
 print(min(List))
 print(sum(List))
