@@ -11,7 +11,6 @@ print(Di)
 Di.pop('Song')
 print(Di)
 
-
 String = input("Enter a string: ")
 def palindrome(strn):
     return strn == strn[::-1]
@@ -22,4 +21,3 @@ if s:
 else:
     print('No')
 
-print("Trying git diff command")
