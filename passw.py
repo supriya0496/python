@@ -28,8 +28,7 @@ def passs(val):
         print("Invalid password")
            
 parser = argparse.ArgumentParser(description = 'Enter the valid password')
-parser.add_argument('-p', '--password', type=str, metavar="", help='Type valid password')
+parser.add_argument('password', type=str, metavar="", help='Type valid password')
 args = parser.parse_args()
 
 passs(args.password)
-
