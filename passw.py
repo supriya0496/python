@@ -1,6 +1,5 @@
-import sys
-def passs(val):
-   
+import argparse
+def passs(val):   
     up = 0
     lo = 0
     schar = 0
@@ -28,6 +27,9 @@ def passs(val):
     else:
         print("Invalid password")
            
-           
-inp = str(sys.argv[1:])
-passs(inp)
+parser = argparse.ArgumentParser(description = 'Enter the valid password')
+parser.add_argument('-p', '--password', type=str, metavar="", help='Type valid password')
+args = parser.parse_args()
+
+passs(args.password)
+
